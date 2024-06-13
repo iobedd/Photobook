@@ -27,6 +27,7 @@
 .banner-text h1 {
     font-size: 130px;
     font-family: 'Kaushan Script';
+    
 }
 
 .banner-text p {
@@ -35,11 +36,12 @@
 }
 
 .banner-btn {
-    margin: 70px auto 0;
+    margin: 30px auto 0;
 }
 
 .banner-btn a {
     width: 150px;
+    
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
@@ -126,10 +128,10 @@ nav ul li a {
 /*--About--*/
 
 #EchipaNoastra {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 70px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.959), grey, rgba(0, 0, 0, 0.692));
+    background-image: linear-gradient(rgb(0 0 0), grey, rgb(0 0 0));
 }
 
 .title-text {
@@ -169,7 +171,7 @@ nav ul li a {
 }
 
 .about-box {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +183,7 @@ nav ul li a {
     flex: 1;
     flex-basis: 30%;
     width: 200px;
-    height: 220px;
+    height: 20%;
     color: #000;
     padding: 40px 20px;
     position: relative;
@@ -197,7 +199,7 @@ nav ul li a {
 }
 
 .abouts-img img {
-    width: 52%;
+    width:60%;
     margin-top: 5px;
     margin-left: 10px;
     transform: translate(10%, 10%);
@@ -240,7 +242,7 @@ nav ul li a {
     }
 
     .abouts-img img {
-        width: 100%;
+        width: 60%;
         margin-top: 10px;
         margin-left: 0;
         transform: translate(0%, 0%);
@@ -251,13 +253,14 @@ nav ul li a {
 
 #quizzes {
     width: 100%;
+    height: 100%;
     padding: 70px 0;
     background: #efefef;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.719), #efefef, rgba(0, 0, 0, 0.836));
+    background-image: linear-gradient(rgb(0 0 0), grey, rgb(0 0 0));
 }
 
 .quizzes-box {
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -266,6 +269,7 @@ nav ul li a {
 
 .single-quizzes {
     flex-basis: 48%;
+    
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
@@ -339,9 +343,10 @@ hr {
 /*--prices--*/
 #prices {
     width: 100%;
+    height: 100%;
     padding: 70px 0;
     background: #efefef;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.89), #efefef, rgba(0, 0, 0, 0.849));
+    background-image: linear-gradient(rgb(0 0 0), grey, rgb(0 0 0));
 }
 
 .prices-box {
@@ -390,6 +395,15 @@ hr {
 
 }
 
+.contact-desc {
+    width: 80%;
+    position: absolute;
+    height: auto;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 hr {
     background: #fff;
     height: 2px;
@@ -421,9 +435,68 @@ hr {
     color: #fff;
 }
 
+#contact {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    background: #efefef;
+    background-image: linear-gradient(rgb(0 0 0), grey, rgb(0 0 0));
+}
+
+@media screen and (max-width: 460px) {
+    .single-prices {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        top: 2%;
+    }
+
+    .prices-desc p {
+        font-size: 12px;
+    }
+
+    hr {
+        margin: 5px auto;
+    }
+    .contact-desc{
+        top: 5px; 
+    }
+    .quizzes-desc{
+        top: 5px;
+    }
+    .contact-desc{
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .single-prices {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        top: 2%;
+    }
+
+    .prices-desc p {
+        font-size: 12px;
+    }
+
+    hr {
+        margin: 5px auto;
+    }
+    .contact-desc{
+        top: 5px; 
+    }
+    .quizzes-desc{
+        top: 5px;
+    }
+    .contact-desc{
+        top: 15%;
+    }
+}
+
+
 /* Footer Section*/
 #footer {
-    background: #020202de;
+    background: #000;
     color: rgba(255, 255, 255, 0.459);
     padding: 30px 0 25px 0;
 }

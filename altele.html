@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>
+    Pagina Cupluri
+ </title>
+ <link rel="stylesheet"href="./css/gallery.css">
+</head>
+
+<body>
+ <a href="index.html"><img src="img/logan.png" class="logo" alt="PhotoBook"></a>
+ <div class="about-section">
+ <div style="text-align:center">
+   <h2>Imagini de cuplu realizate de PhotoBook</h2>
+   <p>Apăsați următoarele imagini pentru a le mări</p>
+ </div>
+</div>
+<!-- The four columns -->
+ <div class="row">
+   <div class="column">
+     <img src="img/alt1.jpeg"  style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img/alt2.jpeg"  style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img/alt3.jpeg"  style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img/alt4.jpeg" style="width:100%" onclick="myFunction(this);">
+   </div>
+ </div>
+
+ <div class="container">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg" style="width:100%">
+   <div id="imgtext"></div>
+ </div>
+
+ <script>
+   function myFunction(imgs) {
+   var expandImg = document.getElementById("expandedImg");
+   var imgText = document.getElementById("imgtext");
+   expandImg.src = imgs.src;
+   imgText.innerHTML = imgs.alt;
+   expandImg.parentElement.style.display = "block";
+  }
+ </script>
+
+</body>
+</html>

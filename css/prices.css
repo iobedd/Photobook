@@ -1,21 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
-.container{
-    width: 100%;
+
+.logo {
+    width: 156px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.container {
+    padding: 4%;
+    width: auto;
     min-height: 100vh;
-    background: #ffffff;
+    background: linear-gradient(rgb(124 124 124), rgb(0 0 0 / 18%)), url(../img/conifer.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.container h2{
+
+.container h2 {
     color: #000000;
-    font-size:32px;
-    padding:50px 0;
+    font-size: 32px;
+    padding: 50px 0;
     text-align: center;
 }
-.price-row{
+
+.price-row {
     width: 90%;
     max-width: 1100px;
     margin: auto;
@@ -23,34 +37,41 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 25px;
 }
-.price-col{
-    background: #8f8f8f;
+
+.price-col {
+    background: #3b3b3b;
     padding: 10% 15%;
     border-radius: 10px;
     color: #fff;
     text-align: center;
 }
-.price-col p{
+
+.price-col p {
     font-size: 22px;
 }
-.price-col h3{
+
+.price-col h3 {
     font-size: 44px;
     margin: 20px 0 40px;
     font-weight: 500;
 }
-.price-col h3 span{
+
+.price-col h3 span {
     font-size: 16px;
 }
-.price-col ul{
+
+.price-col ul {
     text-align: left;
     margin: 20px 0;
     color: #ddd;
 }
-.price-col ul li{
+
+.price-col ul li {
     margin: 15px 0;
     size: 20px;
 }
-.price-col button{
+
+.price-col button {
     width: 100%;
     padding: 14px 0;
     background: transparent;
@@ -61,6 +82,29 @@
     cursor: pointer;
     transition: background 0.5s;
 }
-.price-col button:hover{
-    background: #008000;
+
+.price-col button:hover {
+    background: #3b3b3b;
+}
+
+.about-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #7c7c7c;
+    color: #333333;
+    height: 20%;
+}
+
+@media screen and (max-width: 770px) {
+    .logo {
+        margin: 5px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .logo {
+        margin: 5px;
+        position: relative;
+    }
 }
